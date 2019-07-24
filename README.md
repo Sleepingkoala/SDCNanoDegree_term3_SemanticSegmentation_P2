@@ -34,7 +34,7 @@ Each pair of convolutional layer and deconvolutional layer use a random-normaliz
 ##### Training
 After the FCN architecture is built, training is implemented by functions `optimize()` and `train_nn()`.  Adam optimizer is chosen for fewer hyperparameters. All the training and testing are done on AWS cloud computing workspace, deployed by Udacity.  
 
-- ** Does the project train the model correctly? **
+- **Does the project train the model correctly?**
 
 On average, the model decreases loss over time.  For further analysis, the loss of this FCN for each epoch should be printed and stored while the network is training. You can check more details in `loss log.txt`.
 
@@ -87,7 +87,7 @@ according to original paper.
 ![test2](./images/test2.png)
 
 
-- **Does the project correctly label the road? **
+- **Does the project correctly label the road?**
 
 This FCN net aims to label most pixels of roads close to the best solution, and the model doesn't have to predict correctly all the images, just most of them.  A solution that is close to best would label at least 80% of the road and label no more than 20% of non-road pixels as road.
 
